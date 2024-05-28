@@ -12,7 +12,7 @@ const changeDataPage = () => {
 
 <template>
     <div>タイトルページ</div>
-    <button @click="changeRegisterPage()">登録ボタン</button>
+    <button @click="changeRegisterPage()">登録画面へ</button>
     <button @click="changeDataPage()">データ分析画面</button>
 </template>
 
