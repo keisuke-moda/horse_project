@@ -1,26 +1,19 @@
-<script setup>
+<script setup lang="ts">
+const router = useRouter()
+
+const changeRegisterPage = () => {
+    router.push('/register-race')
+}
+
+const changeDataPage = () => {
+    router.push('/data')
+}
 </script>
 
 <template>
-    <div class="m-4">
-        <a>2023年の収支</a>
-        <div class="flex justify-center">
-            <div>収支</div>
-            <div>$</div>
-        </div>
-        <div class="flex">
-            <div>購入</div>
-            <div>$</div>
-        </div>
-        <div class="flex">
-            <div>払い戻し</div>
-            <div>$</div>
-        </div>
-        <div class="flex">
-            <div>回収率</div>
-            <div>%</div>
-        </div>
-    </div>
+    <div>タイトルページ</div>
+    <button @click="changeRegisterPage()">登録ボタン</button>
+    <button @click="changeDataPage()">データ分析画面</button>
 </template>
 
 <style scoped></style>
